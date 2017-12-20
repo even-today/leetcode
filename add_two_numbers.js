@@ -1,7 +1,7 @@
 // I can not finish it in 2017.12.20
 // Travaling list = list.next or l1 = l1.next l2 = l2.next are all OK
 
-// nearly 212ms
+// nearly 212ms beats almost 50% people
 var addTwoNumbers = function(l1, l2) {
     var list = new ListNode(0);
     var result = list;
