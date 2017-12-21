@@ -1,6 +1,6 @@
 // my answer in 2017.12.21
 // 148ms beats 89% man cool!!
-// of course my answer is best!!!
+// my answer is best!!!waoooo so cool
 var lengthOfLongestSubstring = function(s) {
     let subStr = "",
         result = 0;
