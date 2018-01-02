@@ -41,3 +41,23 @@ var findMedianSortedArrays = function(nums1, nums2) {
 // There is alson a special way to solve this problems
 // http://www.growingwiththeweb.com/2015/08/find-the-median-of-two-sorted-arrays.html
 // 216ms
+
+
+// my answer is 285ms
+var findMedianSortedArrays = function(nums1, nums2) {
+    let arr = [].concat(nums1, nums2);
+    sort(arr);
+    let result;
+    if (arr.length % 2 === 0) {
+        result = (arr[arr.length / 2] + arr[(arr.length / 2) - 1]) / 2;
+    }
+    else {
+        result = arr[(arr.length - 1)/2];
+    }
+    return result;
+};
+
+// sort is sorting string by default !!!
+function sort(arr){
+    return arr.sort((a, b) => {return a-b});
+}
